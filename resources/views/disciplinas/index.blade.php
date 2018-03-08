@@ -2,6 +2,7 @@
 
 <body>
 
+<a href="/disciplinas/create">Cadastrar disciplina</a>
 
 <ul>
 @foreach ($disciplinas as $disciplina)
