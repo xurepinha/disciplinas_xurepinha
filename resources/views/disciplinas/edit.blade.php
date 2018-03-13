@@ -1,3 +1,6 @@
+@extends ('master')
+
+@section ('content')
 <form method="POST" action="/disciplinas/{{ $disciplina->id }}">
 {{ csrf_field() }}
 
@@ -7,3 +10,5 @@ Título: <input name="titulo" value="{{ $disciplina->titulo }}"> <br>
 Ementa: <textarea name="ementa"> {{ $disciplina->ementa }} </textarea> <br> 
 <button type="submit"> Salvar</button>
 </form>
+
+@endsection
